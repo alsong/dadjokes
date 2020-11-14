@@ -1,6 +1,6 @@
 <template>
   <div>
-    <SearchJokes @:search-text="searchText" />
+    <SearchJokes v-on:search-text="searchText" />
     <Joke
       v-for="joke in jokes"
       :id="joke.id"
